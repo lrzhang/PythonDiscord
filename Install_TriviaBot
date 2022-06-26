@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+cd ~
+python3 --version
+if [ $? > 0 ]
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+    echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.profile
+    echo 'export PATH=/usr/local/bin:/usr/local/sbin:$PATH' >> ~/.profile
+
+    brew install python
+
+python3 -m pip install -U discord.py
