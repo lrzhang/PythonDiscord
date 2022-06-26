@@ -1,0 +1,3 @@
+#!/bin/sh
+
+Python3 /Users/leezhang/development/python_projects/discordbot/bot.py 
